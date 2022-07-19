@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Poppins:wght@500;700&display=swap");
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================
+header area start
+==================*/
+
+.header-area {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  background-color: #161616;
+  padding: 50px 50px 100px;
+  border-radius: 30px;
+  margin-top: 100px;
+  color: aliceblue;
+}
+.same {
+  width: 50%;
+}
+.headerLeft h1 {
+  font-size: 50px;
+}
+.button {
+  background-color: #dd0000;
+  color: aliceblue;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.headerRight {
+  text-align: center;
+}
+
+/* ================
+header area end
+==================*/
+
+/* ================
+header area start
+==================*/
+
+/* ================
+header area start
+==================*/
+
+/* ================
+header area start
+==================*/
+/* ================
+header area start
+==================*/
