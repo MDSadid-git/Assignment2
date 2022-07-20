@@ -306,9 +306,15 @@ Responsive Mobile area start
 header area start
 ==================*/
   .header-area {
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+  }
+  .same {
+    width: 90%;
+    text-align: center;
   }
   .group-area-left ul li {
     display: block;
