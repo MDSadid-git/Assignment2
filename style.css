@@ -3,6 +3,8 @@
 body {
   font-family: "League Spartan", sans-serif;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* ================
@@ -20,7 +22,8 @@ header area start
   color: aliceblue;
 }
 .same {
-  width: 50%;
+  width: 48%;
+  margin: 1%;
 }
 .headerLeft h1 {
   font-size: 50px;
@@ -36,6 +39,9 @@ header area start
 .headerRight {
   text-align: center;
 }
+.headerRight img {
+  width: 50%;
+}
 
 /* ================
 header area end
@@ -44,7 +50,7 @@ header area end
 /* ================
 main area start
 ==================*/
-#main {
+#fullSport-area {
   width: 75%;
   margin: auto;
   display: flex;
@@ -75,7 +81,7 @@ main area start
   color: #161616;
   text-decoration: none;
 }
-.activ {
+.activ a {
   background-color: #dd0000;
   padding: 11px 77px 11px;
   border-radius: 10px;
@@ -115,13 +121,144 @@ main area start
 .blogSpan {
   margin-right: 30px;
 }
+.bolgsNone {
+  display: none;
+  width: 30%;
+  margin: auto;
+  margin-top: 20px;
+}
 /* ================
 main area start
 ==================*/
 
 /* ================
-header area start
+footer area start
 ==================*/
+.headerLeft h1 {
+  font-size: 35px;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerRight img {
+  width: 100%;
+  align-items: center;
+}
+#footer-area {
+  background-color: #161616;
+}
+.inside {
+  text-align: center;
+  margin-top: 100px;
+  padding: 100px 0;
+  width: 70%;
+  margin: auto;
+}
+.inside h2 {
+  color: aliceblue;
+  font-size: 40px;
+}
+.inside hr {
+  border: none;
+  height: 1px;
+  background-color: gray;
+}
+.inside ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.inside ul li a {
+  color: gray;
+  text-decoration: none;
+}
+.inside i {
+  color: gray;
+  font-size: 30px;
+  margin: 10px;
+}
 /* ================
-header area start
+footer area start
+==================*/
+
+/* ================
+Responsive Tablet area start
+==================*/
+@media only screen and (max-width: 768px) {
+  #fullSport-area {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .group-area-left {
+    width: 90%;
+    text-align: center;
+    background-color: #fff;
+    height: 100px;
+  }
+  .group-area-left ul li {
+    display: inline-block;
+  }
+  .group-area-left a {
+    border: 1px solid gray;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  .group-area-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blog:nth-last-child(9) {
+    display: none;
+  }
+  .bolgsNone {
+    display: block;
+  }
+}
+/* ================
+Responsive Tablet area end
+==================*/
+
+/* ================
+Responsive Mobile area start
+==================*/
+@media only screen and (max-width: 576px) {
+  .header-area {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerLeft h1 {
+    font-size: 25px;
+  }
+  .headerLeft p {
+    font-size: 14px;
+  }
+  .headerRight {
+    margin-top: 20px;
+  }
+  .group-area-left {
+    height: 220px;
+  }
+  .group-area-left ul li {
+    display: block;
+  }
+  .group-area-left ul li a {
+    padding: 10px 25px;
+  }
+  .group-area-right {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bolgsNone {
+    display: none;
+  }
+  .inside ul {
+    display: block;
+  }
+}
+/* ================
+Responsive Mobile area end
 ==================*/
