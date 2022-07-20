@@ -40,9 +40,6 @@ header area start
   width: 40%;
   margin: auto;
 }
-.headerRight img {
-  width: 100%;
-}
 
 /* ================
 header area end
@@ -185,9 +182,6 @@ Responsive Tablet area start
   }
   .headerRight {
     width: 100%;
-  }
-  .headerLeft h1 {
-    font-size: 35px;
   }
   .group-area-left {
     width: 90%;
