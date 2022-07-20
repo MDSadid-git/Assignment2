@@ -287,9 +287,15 @@ Responsive Mobile area start
 header area start
 ==================*/
   .header-area {
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+  }
+  .same {
+    width: 90%;
+    text-align: center;
   }
   .headerLeft h1 {
     font-size: 25px;
