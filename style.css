@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Poppins:wght@500;700&display=swap");
 
 body {
-  font-family: "League Spartan", sans-serif;
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
@@ -43,7 +42,60 @@ header area start
 .headerRight img {
   width: 100%;
 }
-
+.box ul li {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  list-style: none;
+  opacity: 0;
+  background: radial-gradient(deepskyblue, transparent, transparent);
+  bottom: 0;
+  left: 10vh;
+  animation: animate 15s linear infinite;
+}
+.box ul li:nth-child(2) {
+  left: 37vw;
+  animation-delay: 2s;
+}
+.box ul li:nth-child(3) {
+  left: 25vw;
+  animation-delay: 4s;
+}
+.box ul li:nth-child(4) {
+  left: 60vw;
+  animation-delay: 6s;
+}
+.box ul li:nth-child(5) {
+  left: 75vw;
+  animation-delay: 4s;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+    bottom: 0;
+  }
+  25% {
+    transform: scale(3);
+    opacity: 0.8;
+    bottom: 100px;
+  }
+  50% {
+    transform: scale(6);
+    opacity: 0.6;
+    bottom: 300px;
+  }
+  75% {
+    transform: scale(8);
+    opacity: 0.3;
+    bottom: 600px;
+  }
+  100% {
+    transform: scale(10);
+    opacity: 0;
+    bottom: 100;
+  }
+}
 /* ================
 header area end
 ==================*/
@@ -57,6 +109,7 @@ main area start
   display: flex;
   margin-top: 120px;
   margin-bottom: 120px;
+  justify-content: center;
 }
 .group-area-left {
   width: 200px;
@@ -84,7 +137,7 @@ main area start
 }
 .activ a {
   background-color: #dd0000;
-  padding: 11px 77px 11px;
+  padding: 11px 78px 11px;
   border-radius: 10px;
 }
 .group-area-right {
@@ -179,15 +232,18 @@ footer area start
 Responsive Tablet area start
 ==================*/
 @media only screen and (max-width: 768px) {
-  #fullSport-area {
-    flex-direction: column;
-    margin-top: 50px;
-  }
+  /* ================
+main area start
+==================*/
   .headerRight {
     width: 100%;
   }
   .headerLeft h1 {
     font-size: 35px;
+  }
+  #fullSport-area {
+    flex-direction: column;
+    margin-top: 50px;
   }
   .group-area-left {
     width: 90%;
@@ -221,6 +277,9 @@ Responsive Tablet area end
 Responsive Mobile area start
 ==================*/
 @media only screen and (max-width: 576px) {
+  /* ================
+header area start
+==================*/
   .header-area {
     flex-direction: column;
     justify-content: center;
@@ -238,6 +297,10 @@ Responsive Mobile area start
   .headerRight {
     width: 80%;
   }
+
+  /* ================
+main area start
+==================*/
   .group-area-left {
     height: 220px;
   }
@@ -253,6 +316,10 @@ Responsive Mobile area start
   .bolgsNone {
     display: none;
   }
+
+  /* ================
+footer area start
+==================*/
   .inside ul {
     display: block;
   }
