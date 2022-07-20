@@ -31,9 +31,15 @@ header area start
   background-color: #dd0000;
   color: aliceblue;
   padding: 10px 20px;
-  border: none;
+  border: 2px solid #dd0000;
   border-radius: 5px;
   margin-top: 20px;
+  transition: 500ms;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: aliceblue;
+  color: #dd0000;
 }
 .headerRight {
   width: 40%;
